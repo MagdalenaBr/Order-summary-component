@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	font-family: "Red Hat Display", sans-serif;
+	background: url(../images/pattern-background-mobile.svg);
+	background-color: hsl(225, 100%, 94%);
+	background-repeat: no-repeat;
+}
+.container {
+	width: 310px;
+	height: 500px;
+	border-radius: 20px;
+	overflow: hidden;
+	background-color: #fff;
+}
+.text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.img-hero {
+	height: 160px;
+}
+h1 {
+	margin-top: 20px;
+	font-size: 23px;
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+	text-align: center;
+}
+p {
+	text-align: center;
+	margin: 20px;
+	color: hsl(224, 23%, 55%);
+}
+.payment {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 250px;
+	padding: 10px;
+	background-color: hsl(225, 100%, 98%);
+	border-radius: 10px;
+}
+span {
+	display: block;
+	margin-left: -25px;
+}
+.annual-plan {
+	font-weight: 700;
+}
+.cost {
+	margin-top: 3px;
+	color: hsl(224, 23%, 55%);
+}
+.change-bth {
+	border: none;
+	background: none;
+	text-decoration: underline;
+	font-weight: 700;
+	color: hsl(245, 75%, 52%);
+}
+.change-bth:hover {
+	cursor: pointer;
+	text-decoration: none;
+	color: hsl(224, 23%, 55%);
+	transition: 0.3s;
+}
+.payment-bth {
+	width: 250px;
+	margin-top: 20px;
+	padding: 15px;
+	border-radius: 10px;
+	border: none;
+	font-weight: 700;
+	color: #fff;
+	background-color: hsl(245, 75%, 52%);
+	transition: background-color 0.3s;
+}
+.payment-bth:hover {
+	cursor: pointer;
+	background-color: hsl(224, 23%, 55%);
+}
+.cancel-btn {
+	margin-top: 10px;
+	border: none;
+	background: none;
+	font-weight: 700;
+	color: hsl(224, 23%, 55%);
+	transition: color 0.3s;
+}
+.cancel-btn:hover {
+	cursor: pointer;
+	color: hsl(223, 47%, 23%);
+}
+@media (min-width: 992px) {
+	body {
+		background: url(../images/pattern-background-desktop.svg);
+		background-color: hsl(225, 100%, 94%);
+		background-repeat: no-repeat;
+	}
+
+	.container {
+		width: 350px;
+		height: 520px;
+	}
+
+	.img-hero {
+		height: 180px;
+	}
+
+	.payment {
+		width: 300px;
+	}
+	.payment-bth {
+		width: 300px;
+	}
+}
